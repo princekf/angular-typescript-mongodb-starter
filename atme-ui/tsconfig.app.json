@@ -6,8 +6,8 @@
     "types": [],
     "baseUrl": ".",
     "paths": {
-      "@lsservices/*" :["src/app/services/*"],
-      "@lsenvironments/*" :["src/environments/*"]
+      "@atmeservices/*" :["src/app/shared/services/*"],
+      "@atmeenvironments/*" :["src/environments/*"]
     }
   },
   "files": [

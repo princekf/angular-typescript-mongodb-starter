@@ -1,0 +1,17 @@
+<div class="box">
+  <h1>
+    Login
+  </h1>
+  <form (submit)="login($event)">
+    User Name:
+    <input type="text" id="username" />
+
+    Password:
+    <input type="password" id="password" />
+
+    <input class="submit" type="submit" value="Login" />
+  </form>
+  <div class="bottom">
+    Not an User? <a routerLink="/signup">Register Now</a>
+  </div>
+</div>
