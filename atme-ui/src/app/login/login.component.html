@@ -1,16 +1,16 @@
+<div [class.overlay]="loading" [class.spinner]="loading" (click)="$event.stopPropagation();"></div>
 <div class="box">
   <h1>
     Login
   </h1>
-  <form (submit)="login($event)">
-    User Name:
-    <input type="text" id="username" />
+  <div style="color: red;" *ngIf="errorMessage != ''">{{errorMessage}}</div>
+  User Name:
+  <input [(ngModel)]="email" (input)="errorMessage = '';" type="email" />
 
-    Password:
-    <input type="password" id="password" />
+  Password:
+  <input [(ngModel)]="password" (input)="errorMessage = '';" type="password" />
 
-    <input class="submit" type="submit" value="Login" />
-  </form>
+  <input [class.disabled]="email == '' || password == ''"  class="submit" (click)="login();" type="submit" value="Login" />
   <div class="bottom">
     Not an User? <a routerLink="/signup">Register Now</a>
   </div>

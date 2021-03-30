@@ -1,4 +1,4 @@
-input[type=text], input[type=password] {
+input[type=email], input[type=password] {
     width: 20em;
     padding: 8px 8px;
     margin: 8px 0;
@@ -29,4 +29,9 @@ input[type=text], input[type=password] {
 }
 h1{
     margin:0px 0px 10px 0px;
+}
+
+.disabled {
+    pointer-events: none;
+    background-color: gray;
 }

@@ -3,7 +3,7 @@
   <h1>
     Registration
   </h1>
-  <div *ngIf="errorMessage != ''">{{errorMessage}}</div>
+  <div style="color: red;" *ngIf="errorMessage != ''">{{errorMessage}}</div>
 
   Name<span style="color: red;">*</span> :
   <div style="color: red;" *ngIf="errorMsg.name != ''">{{errorMsg.name}}</div>
