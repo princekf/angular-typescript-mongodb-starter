@@ -9,10 +9,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { DatePipe } from '@angular/common';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './login/signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    LoginComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
