@@ -1,4 +1,4 @@
-# A starter project for angular-express combination #
+# A starter project for angular-material-express-typescript combination #
 
 * Server - express
 * Database - MongoDB
