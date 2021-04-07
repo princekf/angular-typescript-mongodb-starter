@@ -1,5 +1,4 @@
 import * as express from 'express';
-import * as cookieParser from 'cookie-parser';
 import * as path from 'path';
 import { APIRouter } from '@ls-api/index';
 import { BASE_URI } from '@atme/serverAPI';
@@ -19,7 +18,6 @@ class App {
     this.app.set('etag', false);
     this.app.use(express.json());
     this.app.use(express.urlencoded({ extended: true }));
-    this.app.use(cookieParser());
     this.app.use(BASE_URI, APIRouter);
 
     // Declare the path to frontend's static assets
