@@ -1,5 +1,4 @@
 import { Connection } from 'mongoose';
-import { lsLogger } from '../log/LSLogger';
 
 class LSMongo {
 
@@ -28,7 +27,6 @@ class LSMongo {
 
       if (!this.lsConnections[dbName] || !this.lsConnections[dbName].readyState) {
 
-        lsLogger.info(`Creating new atme connection for ${dbName}`);
         this.lsConnections[dbName] = this.lsConnection.useDb(dbName);
 
       }
