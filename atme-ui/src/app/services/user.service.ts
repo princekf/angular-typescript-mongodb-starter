@@ -8,7 +8,7 @@ import { catchError } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
-export class LoginSignupService {
+export class UserService {
 
   constructor(
     private readonly http:HttpClient
