@@ -42,6 +42,7 @@ export class LoginComponent {
     this.userService.login(this.form.value).subscribe((message) => {
 
       this.loading = false;
+      this.router.navigateByUrl('/home');
 
     }, (error) => {
 
